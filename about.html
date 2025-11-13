@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About">
+    <title>About • Fantasy Futures - Fantasy Football Analytics</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+            <a href="../index.html" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="../index.html" >Home</a></li>
+                    <li><a href="/pages/playersearch.html">Player Search</a></li>
+                    <li><a href="/pages/fftrade.html">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="/pages/startsit.html">Start/Sit Analysis</a></li>
+                    <li><a href="./about.html" class="active">About</a></li>
+                    <li><a href="./contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <article class="card">
+        <h1>About This Site</h1>
+        <p>site description</p>
+
+        <table aria-describedby="tbl-caption">
+            <caption id="tbl-caption" style="padding:.5rem; text-align:left;">Chicago Bears NFL Record History</caption>
+            <thead>
+            <tr>
+                <th>Year</th>
+                <th>Record (W-L)</th>
+                <th>Comments</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2025</td>
+                <td>0-2</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>5-12</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>7-10</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>8-8</td>
+                <td>Double doink</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <div class="footer">© <span id="year"></span> Jerritt's Site · Built with HTML &amp; CSS</div>
+</main>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

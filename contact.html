@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact">
+    <title>Site Feedback • Fantasy Futures - Fantasy Football Analytics</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+            <a href="../index.html" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="../index.html" >Home</a></li>
+                    <li><a href="/pages/playersearch.html">Player Search</a></li>
+                    <li><a href="/pages/fftrade.html">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="/pages/startsit.html">Start/Sit Analysis</a></li>
+                    <li><a href="./about.html" >About</a></li>
+                    <li><a href="./contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section>
+        <h1>Site Feedback</h1>
+        <p> <strong>POST</strong> method.</p>
+
+        <form method="POST" action="https://httpbin.org/post">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <fieldset style="border:none; padding:0; margin:.75rem 0;">
+                <legend style="font-weight:600; margin-bottom:.5rem;">Profession</legend>
+                <div class="radio-group">
+                    <label><input type="radio" name="profession" value="Engineer" required> Engineer</label>
+                    <label><input type="radio" name="profession" value="Student"> Student</label>
+                    <label><input type="radio" name="profession" value="Teacher"> Teacher</label>
+                    <label><input type="radio" name="profession" value="Other"> Other</label>
+                </div>
+            </fieldset>
+
+            <label for="comments">Site Input</label>
+            <textarea id="comments" name="comments" placeholder="Enter your input here"></textarea>
+
+            <button class="button" type="submit">Send</button>
+        </form>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Jerritt's Site · Built with HTML &amp; CSS</div>
+</main>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
