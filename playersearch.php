@@ -92,9 +92,9 @@ $players = $stmt->fetchAll();
     <h1>Fantasy Toolbox</h1>
     <nav>
         <!-- use your current .html pages here -->
-        <a href="index.html">Home</a>
-        <a href="startsit.html">Start/Sit</a>
-        <a href="fftrade.html">Trade Analyzer</a>
+        <a href="index.php">Home</a>
+        <a href="startsit.php">Start/Sit</a>
+        <a href="trade_analyzer.php">Trade Analyzer</a>
         <a href="playersearch.php"><strong>Player Stats</strong></a>
     </nav>
 </header>
