@@ -122,33 +122,7 @@ $delta = $totA - $totB;
 
 
 <!doctype html>
-// formatting
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Player Trade Analyzer (PPR)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        body { font-family: system-ui, Arial, sans-serif; margin: 2rem; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-        textarea { width: 100%; min-height: 120px; }
-        fieldset { border: 1px solid #ddd; padding: 1rem; border-radius: .5rem; }
-        legend { font-weight: 600; }
-        table { width: 100%; border-collapse: collapse; margin-top: .5rem; }
-        th, td { border: 1px solid #ddd; padding: .5rem; text-align: left; }
-        th { background: #f8f8f8; }
-        .totals { font-weight: 700; }
-        .delta { font-size: 1.1rem; margin-top: 1rem; }
-        .pos { font-size: .9rem; color: #666; }
-        .winner { padding: .25rem .5rem; border-radius: .4rem; background: #eef; display: inline-block; }
-        .loser  { padding: .25rem .5rem; border-radius: .4rem; background: #fee; display: inline-block; }
-        .controls { display:flex; gap:1rem; align-items:end; flex-wrap:wrap; }
-        label { display:block; font-size:.9rem; margin-bottom:.25rem;}
-        input[type="number"], select { padding:.4rem; width: 100%; }
-        button { padding:.6rem 1rem; font-weight:600; }
-        .muted { color:#777; font-size:.9rem; }
-    </style>
-</head>
 <body>
 <h1>Player Trade Analyzer (PPR)</h1>
 <form method="post">
