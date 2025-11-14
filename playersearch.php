@@ -1,5 +1,7 @@
 <?php
 
+const DEBUG = true;
+
 $DB_HOST = "sql302.thsite.top";
 $DB_NAME = "thsi_40395189_PlayerStats";
 $DB_USER = "thsi_40395189";
@@ -45,7 +47,7 @@ $sql = "SELECT
             PassingTouchdowns,
             TotalYards,
             TotalTDs
-        FROM PlayerStats
+        FROM player_stats_season  
         WHERE 1 = 1";
 
 $params = [];
