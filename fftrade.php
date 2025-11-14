@@ -17,8 +17,8 @@
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="playersearch.php">Player Search</a></li>
-                    <li><a href="./fftrade.html">Fantasy Football Trade Calculator</a></li>
-                    <li><a href="./startsit.html" class="active">Start/Sit Analysis</a></li>
+                    <li><a href="fftrade.php" class="active">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="startsit.php">Start/Sit Analysis</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>

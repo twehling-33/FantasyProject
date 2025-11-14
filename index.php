@@ -12,10 +12,10 @@
 <header class="header">
     <div class="container">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
-            <a href="./index.html" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
+            <a href="index.php" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
             <nav aria-label="Main">
                 <ul>
-                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="index.php" class="active">Home</a></li>
                     <li><a href="/pages/playersearch.html">Player Search</a></li>
                     <li><a href="/pages/fftrade.html">Fantasy Football Trade Calculator</a></li>
                     <li><a href="/pages/startsit.html">Start/Sit Analysis</a></li>
