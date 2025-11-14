@@ -1,8 +1,8 @@
 <?php
-$host = "YOUR_TINKERHOST_SQL_HOST";  // ex: sql302.byetcluster.com
-$db   = "YOUR_DATABASE_NAME";
-$user = "YOUR_DATABASE_USERNAME";
-$pass = "YOUR_DATABASE_PASSWORD";
+$host = "sql302.thsite.top";  //
+$db   = "thsi_40395189_PlayerStats";
+$user = "thsi_40395189";
+$pass = "RphibGT1";
 
 try {
     $pdo = new PDO(
