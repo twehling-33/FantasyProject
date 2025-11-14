@@ -1,5 +1,32 @@
-<?php
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home">
+    <title>Home • Fantasy Futures - Fantasy Football Analytics</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
+<header class="header">
+    <div class="container">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+            <a href="index.php" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="/pages/playersearch.php">Player Search</a></li>
+                    <li><a href="/pages/trade_analyzer.php"  class="active">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="/pages/startsit.html">Start/Sit Analysis</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<?php
 $DB_HOST = "sql302.thsite.top";
 $DB_NAME = "thsi_40395189_PlayerStats";
 $DB_USER = "thsi_40395189";
@@ -93,8 +120,9 @@ $delta = $totA - $totB;
 
 
 
-//formatting
+
 <!doctype html>
+// formatting
 <html lang="en">
 <head>
     <meta charset="utf-8" />

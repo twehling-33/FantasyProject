@@ -83,20 +83,30 @@ $players = $stmt->fetchAll();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Player Stats Search</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About">
+    <title>About • Fantasy Futures - Fantasy Football Analytics</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<header>
-    <h1>Fantasy Toolbox</h1>
-    <nav>
-        <!-- use your current .html pages here -->
-        <a href="index.php">Home</a>
-        <a href="startsit.php">Start/Sit</a>
-        <a href="trade_analyzer.php">Trade Analyzer</a>
-        <a href="playersearch.php"><strong>Player Stats</strong></a>
-    </nav>
+
+<header class="header">
+    <div class="container">
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
+            <a href="../index.html" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="../index.php" >Home</a></li>
+                    <li><a href="/pages/playersearch.php"  class="active">Player Search</a></li>
+                    <li><a href="/pages/trade_analyzer.php">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="/pages/startsit.html">Start/Sit Analysis</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
 
 <div class="container">

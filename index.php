@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Home">
     <title>Home • Fantasy Futures - Fantasy Football Analytics</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,8 +16,8 @@
             <nav aria-label="Main">
                 <ul>
                     <li><a href="index.php" class="active">Home</a></li>
-                    <li><a href="/pages/playersearch.html">Player Search</a></li>
-                    <li><a href="/pages/fftrade.html">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="/pages/playersearch.php">Player Search</a></li>
+                    <li><a href="/pages/trade_analyzer.php">Fantasy Football Trade Calculator</a></li>
                     <li><a href="/pages/startsit.html">Start/Sit Analysis</a></li>
                     <li><a href="/pages/about.html">About</a></li>
                     <li><a href="/pages/contact.html">Contact</a></li>
