@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="About">
     <title>About • Fantasy Futures - Fantasy Football Analytics</title>
-    <link rel="stylesheet" href="style.css">  <!-- no ../ -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
 <header class="header">
     <div class="container">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
-            <a href="index.php" style="font-weight:800; font-size:1.8rem;">
-                Fantasy Futures - Fantasy Football Analytics
-            </a>
+            <a href="../index.php" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
             <nav aria-label="Main">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="playersearch.php">Player Search</a></li>
-                    <li><a href="trade_analyzer.php">Fantasy Football Trade Calculator</a></li>
-                    <li><a href="startsit.php">Start/Sit Analysis</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.php" >Home</a></li>
+                    <li><a href="/pages/playersearch.php">Player Search</a></li>
+                    <li><a href="/pages/trade_analyzer.php">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="/pages/startsit.php">Start/Sit Analysis</a></li>
+                    <li><a href="./about.html" class="active">About</a></li>
+                    <li><a href="./contact.html" >Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,11 +32,11 @@
         <h1>About Fantasy Futures</h1>
 
         <p>
-            Fantasy Futures is a fantasy football analytics application developed for our project to demonstrate full-stack
+            Fantasy Futures is a fantasy football analytics site developed for our project to demonstrate
             web development skills using HTML, CSS, PHP, and MySQL. The goal of the project was to build a fully functioning
-            website that could analyze real NFL performance data and provide users with tools such as player search,
-            trade evaluation, and start/sit decision support. The final product integrates a live database, several
-            interactive PHP-driven pages, and an easy-to-navigate layout accessible through the site’s main navigation.
+            website that could analyze NFL performance data and provide users with tools such as player search,
+            trade evaluation, and start/sit decision support. The final product integrates a database, several
+            interactive PHP-driven pages, and an easy to navigate layout accessible through the site’s main navigation.
         </p>
 
         <p>
@@ -52,21 +50,23 @@
             A significant part of the project involved designing and integrating a remote MySQL database hosted by TinkerHost.
             The database stores all statistical information used across the site, including weekly player performance for the
             entire 2024 NFL season. The original data came in the form of eighteen separate CSV files—one for each week. These
-            files were cleaned, merged, and imported into a single database table called <strong>PlayerStats</strong>, which
+            files were cleaned, merged, and imported into a single database table called PlayerStats, which
             contains player names, IDs, teams, opponents, weekly stats, and calculated totals such as total yards and
             touchdowns. Consolidating the weekly data into one table greatly simplified our SQL queries and prevented the
-            codebase from becoming unnecessarily complex.
+            codebase from becoming unnecessarily complex. A secondary table was later added that contained player projected
+            fantasy points to add the post-trade player performance chart.
         </p>
 
         <p>
             Each feature of the site uses this database in a different way. The Player Search page allows users to filter by
-            name, week, team, or position, dynamically building SQL queries based on whichever filters the user selects.
+            name, week, team, or position, building SQL queries based on whichever filters the user selects.
             The Trade Analyzer is more calculation-focused: users enter two groups of players, and the application computes
             fantasy values using PPR scoring formulas applied to real weekly data. The tool then totals both sides and
-            identifies which group of players provides more expected value. The Start/Sit tool serves as a quicker
-            comparative feature, helping users evaluate two players head-to-head based on their historical weekly output.
-            Together, these tools demonstrate how a single, well-structured database can support multiple forms of analysis
-            when paired with dynamic PHP logic.
+            identifies which group of players provides more expected value based off previous performance and offers
+            insight to potential future performance via a plot of projected future performance for all parties in the trade.
+            The Start/Sit tool serves as a quicker comparative feature, helping users evaluate two players head-to-head
+            based on their historical weekly output. Together, these tools demonstrate how a well-structured
+            database can support multiple forms of analysis when paired with PHP programming.
         </p>
 
         <p>
@@ -81,7 +81,9 @@
     </section>
 
 
-    <div class="footer">© <span id="year"></span> Fantasy Futures · Built with HTML &amp; CSS</div>
+    <div class="footer">
+        © <span id="year"></span> Fantasy Futures · Built with HTML, CSS, MySQL &amp; PHP
+    </div>
 </main>
 
 <script>

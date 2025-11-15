@@ -18,7 +18,7 @@
                     <li><a href="index.php" class="active">Home</a></li>
                     <li><a href="/pages/playersearch.php">Player Search</a></li>
                     <li><a href="/pages/trade_analyzer.php">Fantasy Football Trade Calculator</a></li>
-                    <li><a href="/pages/startsit.html">Start/Sit Analysis</a></li>
+                    <li><a href="/pages/startsit.php">Start/Sit Analysis</a></li>
                     <li><a href="/pages/about.html">About</a></li>
                     <li><a href="/pages/contact.html">Contact</a></li>
                 </ul>
@@ -29,7 +29,7 @@
 
 <main class="container">
 
-    <!-- Hero / Intro -->
+    <div class="container">
     <section class="hero card">
         <h1>Welcome to Fantasy Futures</h1>
         <p>
@@ -37,8 +37,11 @@
             We use real 2024 NFL weekly stats to power tools like player search, trade analysis, and start/sit help.
         </p>
     </section>
+    </div>
+
 
     <section class="grid">
+
         <div class="card">
             <h2>Player Stats Lookup</h2>
             <p>
@@ -47,6 +50,8 @@
             </p>
             <p><a href="playersearch.php">Go to Player Search →</a></p>
         </div>
+
+
 
         <div class="card">
             <h2>Trade Analyzer (PPR)</h2>
@@ -65,9 +70,12 @@
             </p>
             <p><a href="startsit.php">Go to Start/Sit →</a></p>
         </div>
+
     </section>
 
+    <div class="container">
     <section class="card">
+
         <h2>Top Fantasy Quarterbacks (Video)</h2>
         <p>
             Check out this breakdown of the best current fantasy quarterbacks by an upcoming creator for additional insight:
@@ -85,8 +93,9 @@
             </div>
         </div>
     </section>
+    </div>
 
-    <!-- About the project blurb -->
+    
     <section class="card">
         <h2>About This Project</h2>
         <p>
@@ -100,8 +109,9 @@
     </section>
 
     <div class="footer">
-        © <span id="year"></span> Fantasy Futures · Built with HTML, CSS &amp; PHP
+        © <span id="year"></span> Fantasy Futures · Built with HTML, CSS, MySQL &amp; PHP
     </div>
+
 </main>
 
 <script>
