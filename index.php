@@ -48,7 +48,7 @@
                 Search weekly performance for any skill-position player.
                 Filter by week, position, and team to quickly find the numbers you need.
             </p>
-            <p><a href="playersearch.php">Go to Player Search →</a></p>
+            <p><a href="/pages/playersearch.php">Go to Player Search →</a></p>
         </div>
 
 
@@ -59,7 +59,7 @@
                 Compare two sides of a trade using PPR scoring based on actual production.
                 Enter player names or IDs, pick a week range, and see which side wins.
             </p>
-            <p><a href="trade_analyzer.php">Go to Trade Analyzer →</a></p>
+            <p><a href="/pages/trade_analyzer.php">Go to Trade Analyzer →</a></p>
         </div>
 
         <div class="card">
@@ -68,7 +68,7 @@
                 Use our start/sit page to help decide between players based on matchups
                 and their historical performance from our database.
             </p>
-            <p><a href="startsit.php">Go to Start/Sit →</a></p>
+            <p><a href="/pages/startsit.php">Go to Start/Sit →</a></p>
         </div>
 
     </section>
@@ -95,7 +95,7 @@
     </section>
     </div>
 
-    
+
     <section class="card">
         <h2>About This Project</h2>
         <p>
@@ -104,7 +104,7 @@
         </p>
         <p>
             To learn more about the technologies and decisions behind the project,
-            visit the <a href="about.html">About page →</a>
+            visit the <a href="/pages/about.html">About page →</a>
         </p>
     </section>
 
