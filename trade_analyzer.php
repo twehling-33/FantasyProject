@@ -175,7 +175,7 @@ foreach ($futureWeeks as $w) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Home">
-    <title>Home • Fantasy Futures - Fantasy Football Analytics</title>
+    <title>Trade Analyzer • Fantasy Futures - Fantasy Football Analytics</title>
     <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>

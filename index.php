@@ -15,9 +15,9 @@
             <a href="index.php" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
             <nav aria-label="Main">
                 <ul>
-                    <li><a href="index.php" class="active">Home</a></li>
+                    <li><a href="index.php" class="active" >Home</a></li>
                     <li><a href="/pages/playersearch.php">Player Search</a></li>
-                    <li><a href="/pages/trade_analyzer.php">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="/pages/trade_analyzer.php" >Fantasy Football Trade Calculator</a></li>
                     <li><a href="/pages/startsit.php">Start/Sit Analysis</a></li>
                     <li><a href="/pages/about.html">About</a></li>
                     <li><a href="/pages/contact.html">Contact</a></li>
