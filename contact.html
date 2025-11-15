@@ -4,23 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Contact">
-    <title>Site Feedback • Fantasy Futures - Fantasy Football Analytics</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Contact • Fantasy Futures - Fantasy Football Analytics</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
     <div class="container">
         <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem;">
-            <a href="../index.php" style="font-weight:800; font-size:1.8rem;">Fantasy Futures - Fantasy Football Analytics</a>
+            <a href="index.php" style="font-weight:800; font-size:1.8rem;">
+                Fantasy Futures - Fantasy Football Analytics
+            </a>
+
             <nav aria-label="Main">
                 <ul>
-                    <li><a href="../index.php" >Home</a></li>
-                    <li><a href="/pages/playersearch.php">Player Search</a></li>
-                    <li><a href="/pages/trade_analyzer.php">Fantasy Football Trade Calculator</a></li>
-                    <li><a href="/pages/startsit.html">Start/Sit Analysis</a></li>
-                    <li><a href="./about.html" >About</a></li>
-                    <li><a href="./contact.html" class="active">Contact</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="playersearch.php">Player Search</a></li>
+                    <li><a href="trade_analyzer.php">Fantasy Football Trade Calculator</a></li>
+                    <li><a href="startsit.php">Start/Sit Analysis</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,41 +32,36 @@
 
 <main class="container">
 
-    <section>
+    <section class="card" style="padding:1.5rem; line-height:1.6;">
         <h1>Site Feedback</h1>
-        <p> <strong>POST</strong> method.</p>
+        <p><strong>POST</strong> method.</p>
 
         <form method="POST" action="https://httpbin.org/post">
+
             <label for="firstName">First Name</label>
             <input type="text" id="firstName" name="firstName" required>
 
             <label for="lastName">Last Name</label>
             <input type="text" id="lastName" name="lastName" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <label for="emailAddress">Email Address</label>
+            <input type="email" id="emailAddress" name="emailAddress" required>
 
-            <fieldset style="border:none; padding:0; margin:.75rem 0;">
-                <legend style="font-weight:600; margin-bottom:.5rem;">Profession</legend>
-                <div class="radio-group">
-                    <label><input type="radio" name="profession" value="Engineer" required> Engineer</label>
-                    <label><input type="radio" name="profession" value="Student"> Student</label>
-                    <label><input type="radio" name="profession" value="Teacher"> Teacher</label>
-                    <label><input type="radio" name="profession" value="Other"> Other</label>
-                </div>
-            </fieldset>
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" required></textarea>
 
-            <label for="comments">Site Input</label>
-            <textarea id="comments" name="comments" placeholder="Enter your input here"></textarea>
+            <br><br>
 
-            <button class="button" type="submit">Send</button>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
         </form>
     </section>
 
-    <div class="footer">© <span id="year"></span> Jerritt's Site · Built with HTML &amp; CSS</div>
+    <div class="footer">
+        © <span id="year"></span> Fantasy Futures · Built with HTML &amp; CSS
+    </div>
 </main>
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+
 </body>
 </html>
